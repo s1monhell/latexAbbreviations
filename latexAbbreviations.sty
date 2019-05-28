@@ -1,0 +1,268 @@
+%============= PROVIDES ==============%
+\ProvidesPackage{abbreviations}
+
+%============= REQUIREMENTS ==============%
+\RequirePackage{color}
+\RequirePackage{dsfont}
+\RequirePackage{siunitx}
+\RequirePackage{amsmath,amsthm,amssymb}
+
+%============= FROM BEAMER CLASS ==============%
+\newcommand{\bs}[1]{{\boldsymbol #1}}
+\newcommand{\cts}{(t)}
+\newcommand{\xv}[1][\cts]{\bs{x}#1}
+\newcommand{\xvd}[1][\cts]{\bs{x}^{\ast}#1}
+\newcommand{\uv}[1][\cts]{\bs{u}#1}
+\newcommand{\uvd}[1][\cts]{\bs{u}^{\ast}#1}
+\newcommand{\yv}[1][\cts]{\bs{y}#1}
+\newcommand{\yvd}[1][\cts]{\bs{y}^{\ast}#1}
+
+%============= TIKZ ==============%
+\newcommand{\remake}{\tikzset{external/remake next}}
+
+%============= ARRAYS ==============%
+\newcommand{\ra}[1]{\renewcommand{\arraystretch}{#1}}
+
+%============= GENERAL ==============%
+\newcommand{\abs}[1]{\vert #1 \vert}
+\newcommand{\dt}{\text{d}t}
+
+%============= DOMAINS ==============%
+\newcommand{\N}{\mathds{N}}
+\newcommand{\Z}{\mathds{Z}}
+\newcommand{\R}{\mathds{R}}
+\newcommand{\Rtn}{\R_{t_0}^+}
+\newcommand{\Rplus}{\R^+}
+\newcommand{\inR}{\in\mathds{R}}
+\newcommand{\inRn}[1]{\in\mathds{R}^{#1}}
+\newcommand{\inRnm}[2]{\in\mathds{R}^{#1\times #2}}
+
+%============= MATRICES ==============%
+\newcommand{\transpose}[1]{#1^{\mathrm{T}}}
+
+%============= SYSTEM VARIABLES ==============%
+\renewcommand{\vec}[1]{\boldsymbol{#1}}
+% x
+\newcommand{\vx}{\vec{x}} 					
+\newcommand{\vxt}{\vx(t)}					
+\newcommand{\vxn}{\vx_0}					
+\newcommand{\vxnn}{\vx(0)}					 
+\newcommand{\vxs}{\vx^\ast}					
+\newcommand{\vxst}{\vx^\ast(t)}					
+\newcommand{\vxd}{\dot{\vx}}				
+\newcommand{\vxds}{\dot{\vx}^\ast}			  
+\newcommand{\vxdt}{\dot{\vx}(t)}     			
+\newcommand{\vxdst}{\dot{\vx}^*(t)}
+% x_k
+\newcommand{\vxk}{\vx_{{k}}} 					
+\newcommand{\vxkp}{\vx_{{k}+1}}
+% x_hat
+\newcommand{\vxhat}{\hat{\vx}} 						
+\newcommand{\vxhatt}{\vxhat(t)}						 
+\newcommand{\vxhatn}{\vxhat_0}					  
+\newcommand{\vxhatnn}{\vxhat(0)}					  
+\newcommand{\vxhats}{\vxhat^\ast}					
+\newcommand{\vxhatst}{\vxhat^\ast(t)}			
+\newcommand{\vxhatd}{\dot{\vxhat}}				
+\newcommand{\vxhatds}{\dot{\vxhat}^\ast}		
+\newcommand{\vxhatdt}{\dot{\vxhat}(t)}     			
+\newcommand{\vxhatdst}{\dot{\vxhat}^*(t)}
+% x_tilde
+\newcommand{\vxtilde}{\tilde{\vx}} 						
+\newcommand{\vxtildet}{\vxtilde(t)}						 
+\newcommand{\vxtilden}{\vxtilde_0}					  
+\newcommand{\vxtildenn}{\vxtilde(0)}					  
+\newcommand{\vxtildes}{\vxtilde^\ast}					
+\newcommand{\vxtildest}{\vxtilde^\ast(t)}			
+\newcommand{\vxtilded}{\dot{\vxtilde}}				
+\newcommand{\vxtildeds}{\dot{\vxtilde}^\ast}		
+\newcommand{\vxtildedt}{\dot{\vxtilde}(t)}     			
+\newcommand{\vxtildedst}{\dot{\vxtilde}^*(t)}
+% y
+\newcommand{\vy}{\vec{y}} 							% y
+\newcommand{\vyt}{\vy(t)}						  % y(t)
+\newcommand{\vyn}{\vy_0}					  % y_0
+\newcommand{\vynn}{\vy(0)}					   % y(0)
+\newcommand{\vys}{\vy^\ast}						% y*
+\newcommand{\vyst}{\vy^\ast(t)}					% y*(t)
+\newcommand{\vyd}{\dot{\vy}}				% dy/dt
+\newcommand{\vyds}{\dot{\vy}^\ast}			  % dy*/dt
+\newcommand{\vydt}{\dot{\vy}(t)}     			
+\newcommand{\vydst}{\dot{\vy}^*(t)}
+\newcommand{\vytilde}{\tilde{\vy}}
+\newcommand{\vytilded}{\dot{\vytil}}
+% y_hat
+\newcommand{\vyhat}{\hat{\vy}} 						
+\newcommand{\vyhatt}{\vyhat(t)}						 
+\newcommand{\vyhatn}{\vyhat_0}					  
+\newcommand{\vyhatnn}{\vyhat(0)}					  
+\newcommand{\vyhats}{\vyhat^\ast}					
+\newcommand{\vyhatst}{\vyhat^\ast(t)}			
+\newcommand{\vydhat}{\dot{\vyhat}}				
+\newcommand{\vydhats}{\dot{\vyhat}^\ast}		
+\newcommand{\vydhatt}{\dot{\vyhat}(t)}     			
+\newcommand{\vydhatst}{\dot{\vyhat}^*(t)}
+\newcommand{\vyhattil}{\tilde{\vyhat}}
+\newcommand{\vydhattil}{\dot{\vytil}}
+% z
+\newcommand{\dz}{\dot{z}}
+\newcommand{\vz}{\vec{z}} 					
+\newcommand{\vzt}{\vz(t)}					
+\newcommand{\vzn}{\vz_0}					
+\newcommand{\vznn}{\vz(0)}					 
+\newcommand{\vzs}{\vz^\ast}					
+\newcommand{\vzst}{\vz^\ast(t)}					
+\newcommand{\vzd}{\dot{\vz}}				
+\newcommand{\vzds}{\dot{\vz}^\ast}			  
+\newcommand{\vzdt}{\dot{\vz}(t)}     			
+\newcommand{\vzdst}{\dot{\vz}^*(t)}
+\newcommand{\vztil}{\tilde{\vz}}
+\newcommand{\vzdtil}{\dot{\vztil}}
+% z_hat
+\newcommand{\zhat}{\hat{z}} 						
+\newcommand{\vzhat}{\hat{\vz}} 						
+\newcommand{\vzhatt}{\vzhat(t)}						 
+\newcommand{\vzhatn}{\vzhat_0}					  
+\newcommand{\vzhatnn}{\vzhat(0)}					  
+\newcommand{\vzhats}{\vzhat^\ast}					
+\newcommand{\vzhatst}{\vzhat^\ast(t)}			
+\newcommand{\vzdhat}{\dot{\vzhat}}				
+\newcommand{\vzdhats}{\dot{\vzhat}^\ast}		
+\newcommand{\vzdhatt}{\dot{\vzhat}(t)}     			
+\newcommand{\vzdhatst}{\dot{\vzhat}^*(t)}
+\newcommand{\vzhattil}{\tilde{\vzhat}}
+\newcommand{\vzdhattil}{\dot{\vztil}}
+% u
+\newcommand{\vu}{\vec{u}} 					
+\newcommand{\vut}{\vu(t)}					
+\newcommand{\vun}{\vu_0}					
+\newcommand{\vunn}{\vu(0)}	
+\newcommand{\us}{u^\ast}				 
+\newcommand{\vus}{\vu^\ast}					
+\newcommand{\vust}{\vu^\ast(t)}					
+\newcommand{\vud}{\dot{\vu}}				
+\newcommand{\vuds}{\dot{\vu}^\ast}			  
+\newcommand{\vudt}{\dot{\vu}(t)}     			
+\newcommand{\vudst}{\dot{\vu}^*(t)}
+\newcommand{\vutil}{\tilde{\vu}}
+\newcommand{\vudtil}{\dot{\vutil}}
+% u_k
+\newcommand{\vuk}{\vu_{{k}}} 					
+\newcommand{\vukp}{\vu_{{k}+1}}
+
+%============= VECTOR FIELDS ==============%
+%f
+\newcommand{\vf}{\vec{f}}
+\newcommand{\vfx}{\vf(x)}
+\newcommand{\vfxt}{\vf(x(t))}
+\newcommand{\vfvx}{\vf(\vx)}
+\newcommand{\vfvxt}{\vf(\vxt)}
+\newcommand{\vfvxu}{\vf(\vx,u)}	
+\newcommand{\vfvxtvut}{\vf(\vxt,\vut)}
+\newcommand{\vfvxvu}{\vf(\vx,\vu)}
+\newcommand{\vftxu}{\vf(t,x,u)}
+\newcommand{\vftvxu}{\vf(t,\vx,u)}
+\newcommand{\vftvxvu}{\vf(t,\vx,\vu)}
+%g
+\newcommand{\vg}{\vec{g}}
+\newcommand{\vgx}{\vg(x)}
+\newcommand{\vgxt}{\vg(x(t))}
+\newcommand{\vgvx}{\vg(\vx)}
+\newcommand{\vgvxt}{\vg(\vxt)}
+\newcommand{\vgvxu}{\vg(\vx,u)}	
+\newcommand{\vgvxtvut}{\vg(\vxt,\vut)}
+\newcommand{\vgvxvu}{\vg(\vx,\vu)}
+\newcommand{\vgtxu}{\vg(t,x,u)}
+\newcommand{\vgtvxu}{\vg(t,\vx,u)}
+\newcommand{\vgtvxvu}{\vg(t,\vx,\vu)}
+% g_tilde
+\newcommand{\vgtilde}{\tilde{\vg}}
+\newcommand{\vgtildex}{\vgtilde(x)}
+\newcommand{\vgtildext}{\vgtilde(x(t))}
+\newcommand{\vgtildevx}{\vgtilde(\vx)}
+\newcommand{\vgtildevxt}{\vgtilde(\vxt)}
+\newcommand{\vgtildevxu}{\vgtilde(\vx,u)}	
+\newcommand{\vgtildevxtvut}{\vgtilde(\vxt,\vut)}
+\newcommand{\vgtildevxvu}{\vgtilde(\vx,\vu)}
+\newcommand{\vgtildetxu}{\vgtilde(t,x,u)}
+\newcommand{\vgtildetvxu}{\vgtilde(t,\vx,u)}
+\newcommand{\vgtildetvxvu}{\vgtilde(t,\vx,\vu)}
+% h
+\newcommand{\vh}{\vec{h}}
+\newcommand{\vhx}{\vh(x)}
+\newcommand{\vhxt}{\vh(x(t))}
+\newcommand{\vhvx}{\vh(\vx)}
+\newcommand{\vhvxt}{\vh(\vxt)}
+\newcommand{\vhvxu}{\vh(\vx,u)}	
+\newcommand{\vhvxtvut}{\vh(\vxt,\vut)}
+\newcommand{\vhvxvu}{\vh(\vx,\vu)}
+\newcommand{\vhtxu}{\vh(t,x,u)}
+\newcommand{\vhtvxu}{\vh(t,\vx,u)}
+\newcommand{\vhtvxvu}{\vh(t,\vx,\vu)}
+% h_tilde
+\newcommand{\vhtilde}{\tilde{\vh}}
+\newcommand{\vhtildex}{\vhtilde(x)}
+\newcommand{\vhtildext}{\vhtilde(x(t))}
+\newcommand{\vhtildevx}{\vhtilde(\vx)}
+\newcommand{\vhtildevxt}{\vhtilde(\vxt)}
+\newcommand{\vhtildevxu}{\vhtilde(\vx,u)}	
+\newcommand{\vhtildevxtvut}{\vhtilde(\vxt,\vut)}
+\newcommand{\vhtildevxvu}{\vhtilde(\vx,\vu)}
+\newcommand{\vhtildetxu}{\vhtilde(t,x,u)}
+\newcommand{\vhtildetvxu}{\vhtilde(t,\vx,u)}
+\newcommand{\vhtildetvxvu}{\vhtilde(t,\vx,\vu)}
+
+%============= FRACTIONS ==============%
+\newcommand{\pd}[1]{\frac{\partial}{\partial #1}}
+\newcommand{\pdab}[2]{\frac{\partial#1}{\partial #2}}
+
+%============= SI UNITS ==============%
+\newcommand{\SIp}[1]{\SI{#1}{\percent}}
+\newcommand{\SIs}[1]{\SI{#1}{\second}}
+\newcommand{\SIms}[1]{\SI{#1}{\milli\second}}
+\newcommand{\SIkm}[1]{\SI{#1}{\kilo\meter}}
+\newcommand{\SIg}[1]{\SI{#1}{\gram}}
+\newcommand{\SIkg}[1]{\SI{#1}{\kilo\gram}}
+\newcommand{\SIm}[1]{\SI{#1}{\meter}}
+\newcommand{\SIcm}[1]{\SI{#1}{\centi\meter}}
+\newcommand{\SImm}[1]{\SI{#1}{\milli\meter}}
+\newcommand{\SIdeg}[1]{\SI{#1}{\degree}}
+\newcommand{\SIdb}[1]{\SI{#1}{\decibel}}
+\newcommand{\SIkhz}[1]{\SI{#1}{\kilo\hertz}}
+\newcommand{\SIhz}[1]{\SI{#1}{\hertz}}
+
+%============= OPTIMIZATION ==============%
+\newcommand{\te}{t_{\text{e}}}
+\newcommand{\tf}{t_{\text{f}}}
+% lambda
+\newcommand{\vlam}{\vec{\lambda}} 
+\newcommand{\vlamt}{\vlam(t)}
+\newcommand{\vlams}{\vlam^\ast}
+\newcommand{\vlamd}{\dot{\vlam}} 
+\newcommand{\vlamds}{\vlamd^\ast} 
+% mu
+\newcommand{\vmu}{\vec{\mu}} 
+\newcommand{\vmut}{\vmu(t)}
+\newcommand{\vmus}{\vmu^\ast}
+\newcommand{\vmud}{\dot{\vmu}} 
+\newcommand{\vmuds}{\vmud^\ast} 
+% gradient f
+\newcommand{\gradfvx}{(\nabla f)(\vx)}
+\newcommand{\gradfvxk}{(\nabla f)(\vx_k)}
+\newcommand{\gradfvxT}{(\nabla f)^T(\vx)}
+\newcommand{\gradfvxkT}{(\nabla f)^T(\vx_k)}
+\newcommand{\gradfvxs}{(\nabla f)(\vxs)}
+% gradient H
+\newcommand{\gradvlamHtvxuvlam}{(\nabla_{\vlam} H)(t,\vxs,\us,\vlams)}
+\newcommand{\gradvlamHtvxvuvlam}{(\nabla_{\vlam} H)(t,\vxs,\vus,\vlams)}
+\newcommand{\gradvxHtvxuvlam}{(\nabla_{\vx} H)(t,\vxs,\us,\vlams)}
+\newcommand{\gradvxHtvxvuvlam}{(\nabla_{\vx} H)(t,\vxs,\vus,\vlams)}
+\newcommand{\graduHtvxuvlam}{(\nabla_{u} H)(t,\vxs,\us,\vlams)}
+\newcommand{\gradvuHtvxvuvlam}{(\nabla_{\vu} H)(t,\vxs,\vus,\vlams)}
+% gradient g
+\newcommand{\gradg}{(\nabla \vg)(\vx)}
+\newcommand{\gradgs}{(\nabla \vg)(\vxs)}
+\newcommand{\gradgst}{(\nabla \vg)^T(\vxs)}
+% hessian f
+\newcommand{\hessef}{(\nabla^2 f)(\vx)}
+\newcommand{\hessefk}{(\nabla^2 f)(\vx_k)}
