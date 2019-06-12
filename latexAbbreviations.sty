@@ -43,40 +43,40 @@
 %============= SYSTEM VARIABLES ==============%
 \renewcommand{\vec}[1]{\boldsymbol{#1}}
 % x
-\newcommand{\vx}{\vec{x}} 					
-\newcommand{\vxt}{\vx(t)}					
-\newcommand{\vxn}{\vx_0}					
-\newcommand{\vxnn}{\vx(0)}					 
-\newcommand{\vxs}{\vx^\ast}					
-\newcommand{\vxst}{\vx^\ast(t)}					
-\newcommand{\vxd}{\dot{\vx}}				
-\newcommand{\vxds}{\dot{\vx}^\ast}			  
-\newcommand{\vxdt}{\dot{\vx}(t)}     			
+\newcommand{\vx}{\vec{x}}
+\newcommand{\vxt}{\vx(t)}
+\newcommand{\vxn}{\vx_0}
+\newcommand{\vxnn}{\vx(0)}
+\newcommand{\vxs}{\vx^\ast}
+\newcommand{\vxst}{\vx^\ast(t)}
+\newcommand{\vxd}{\dot{\vx}}
+\newcommand{\vxds}{\dot{\vx}^\ast}
+\newcommand{\vxdt}{\dot{\vx}(t)}
 \newcommand{\vxdst}{\dot{\vx}^*(t)}
 % x_k
-\newcommand{\vxk}{\vx_{{k}}} 					
+\newcommand{\vxk}{\vx_{{k}}}
 \newcommand{\vxkp}{\vx_{{k}+1}}
 % x_hat
-\newcommand{\vxhat}{\hat{\vx}} 						
-\newcommand{\vxhatt}{\vxhat(t)}						 
-\newcommand{\vxhatn}{\vxhat_0}					  
-\newcommand{\vxhatnn}{\vxhat(0)}					  
-\newcommand{\vxhats}{\vxhat^\ast}					
-\newcommand{\vxhatst}{\vxhat^\ast(t)}			
-\newcommand{\vxhatd}{\dot{\vxhat}}				
-\newcommand{\vxhatds}{\dot{\vxhat}^\ast}		
-\newcommand{\vxhatdt}{\dot{\vxhat}(t)}     			
+\newcommand{\vxhat}{\hat{\vx}}
+\newcommand{\vxhatt}{\vxhat(t)}
+\newcommand{\vxhatn}{\vxhat_0}
+\newcommand{\vxhatnn}{\vxhat(0)}
+\newcommand{\vxhats}{\vxhat^\ast}
+\newcommand{\vxhatst}{\vxhat^\ast(t)}
+\newcommand{\vxhatd}{\dot{\vxhat}}
+\newcommand{\vxhatds}{\dot{\vxhat}^\ast}
+\newcommand{\vxhatdt}{\dot{\vxhat}(t)}
 \newcommand{\vxhatdst}{\dot{\vxhat}^*(t)}
 % x_tilde
-\newcommand{\vxtilde}{\tilde{\vx}} 						
-\newcommand{\vxtildet}{\vxtilde(t)}						 
-\newcommand{\vxtilden}{\vxtilde_0}					  
-\newcommand{\vxtildenn}{\vxtilde(0)}					  
-\newcommand{\vxtildes}{\vxtilde^\ast}					
-\newcommand{\vxtildest}{\vxtilde^\ast(t)}			
-\newcommand{\vxtilded}{\dot{\vxtilde}}				
-\newcommand{\vxtildeds}{\dot{\vxtilde}^\ast}		
-\newcommand{\vxtildedt}{\dot{\vxtilde}(t)}     			
+\newcommand{\vxtilde}{\tilde{\vx}}
+\newcommand{\vxtildet}{\vxtilde(t)}
+\newcommand{\vxtilden}{\vxtilde_0}
+\newcommand{\vxtildenn}{\vxtilde(0)}
+\newcommand{\vxtildes}{\vxtilde^\ast}
+\newcommand{\vxtildest}{\vxtilde^\ast(t)}
+\newcommand{\vxtilded}{\dot{\vxtilde}}
+\newcommand{\vxtildeds}{\dot{\vxtilde}^\ast}
+\newcommand{\vxtildedt}{\dot{\vxtilde}(t)}
 \newcommand{\vxtildedst}{\dot{\vxtilde}^*(t)}
 % y
 \newcommand{\vy}{\vec{y}} 							% y
@@ -87,68 +87,74 @@
 \newcommand{\vyst}{\vy^\ast(t)}					% y*(t)
 \newcommand{\vyd}{\dot{\vy}}				% dy/dt
 \newcommand{\vyds}{\dot{\vy}^\ast}			  % dy*/dt
-\newcommand{\vydt}{\dot{\vy}(t)}     			
+\newcommand{\vydt}{\dot{\vy}(t)}
 \newcommand{\vydst}{\dot{\vy}^*(t)}
 \newcommand{\vytilde}{\tilde{\vy}}
 \newcommand{\vytilded}{\dot{\vytil}}
 % y_hat
-\newcommand{\vyhat}{\hat{\vy}} 						
-\newcommand{\vyhatt}{\vyhat(t)}						 
-\newcommand{\vyhatn}{\vyhat_0}					  
-\newcommand{\vyhatnn}{\vyhat(0)}					  
-\newcommand{\vyhats}{\vyhat^\ast}					
-\newcommand{\vyhatst}{\vyhat^\ast(t)}			
-\newcommand{\vydhat}{\dot{\vyhat}}				
-\newcommand{\vydhats}{\dot{\vyhat}^\ast}		
-\newcommand{\vydhatt}{\dot{\vyhat}(t)}     			
+\newcommand{\vyhat}{\hat{\vy}}
+\newcommand{\vyhatt}{\vyhat(t)}
+\newcommand{\vyhatn}{\vyhat_0}
+\newcommand{\vyhatnn}{\vyhat(0)}
+\newcommand{\vyhats}{\vyhat^\ast}
+\newcommand{\vyhatst}{\vyhat^\ast(t)}
+\newcommand{\vydhat}{\dot{\vyhat}}
+\newcommand{\vydhats}{\dot{\vyhat}^\ast}
+\newcommand{\vydhatt}{\dot{\vyhat}(t)}
 \newcommand{\vydhatst}{\dot{\vyhat}^*(t)}
 \newcommand{\vyhattil}{\tilde{\vyhat}}
 \newcommand{\vydhattil}{\dot{\vytil}}
 % z
 \newcommand{\dz}{\dot{z}}
-\newcommand{\vz}{\vec{z}} 					
-\newcommand{\vzt}{\vz(t)}					
-\newcommand{\vzn}{\vz_0}					
-\newcommand{\vznn}{\vz(0)}					 
-\newcommand{\vzs}{\vz^\ast}					
-\newcommand{\vzst}{\vz^\ast(t)}					
-\newcommand{\vzd}{\dot{\vz}}				
-\newcommand{\vzds}{\dot{\vz}^\ast}			  
-\newcommand{\vzdt}{\dot{\vz}(t)}     			
+\newcommand{\vz}{\vec{z}}
+\newcommand{\vzt}{\vz(t)}
+\newcommand{\vzn}{\vz_0}
+\newcommand{\vznn}{\vz(0)}
+\newcommand{\vzs}{\vz^\ast}
+\newcommand{\vzst}{\vz^\ast(t)}
+\newcommand{\vzd}{\dot{\vz}}
+\newcommand{\vzds}{\dot{\vz}^\ast}
+\newcommand{\vzdt}{\dot{\vz}(t)}
 \newcommand{\vzdst}{\dot{\vz}^*(t)}
 \newcommand{\vztil}{\tilde{\vz}}
 \newcommand{\vzdtil}{\dot{\vztil}}
 % z_hat
-\newcommand{\zhat}{\hat{z}} 						
-\newcommand{\vzhat}{\hat{\vz}} 						
-\newcommand{\vzhatt}{\vzhat(t)}						 
-\newcommand{\vzhatn}{\vzhat_0}					  
-\newcommand{\vzhatnn}{\vzhat(0)}					  
-\newcommand{\vzhats}{\vzhat^\ast}					
-\newcommand{\vzhatst}{\vzhat^\ast(t)}			
-\newcommand{\vzdhat}{\dot{\vzhat}}				
-\newcommand{\vzdhats}{\dot{\vzhat}^\ast}		
-\newcommand{\vzdhatt}{\dot{\vzhat}(t)}     			
+\newcommand{\zhat}{\hat{z}}
+\newcommand{\vzhat}{\hat{\vz}}
+\newcommand{\vzhatt}{\vzhat(t)}
+\newcommand{\vzhatn}{\vzhat_0}
+\newcommand{\vzhatnn}{\vzhat(0)}
+\newcommand{\vzhats}{\vzhat^\ast}
+\newcommand{\vzhatst}{\vzhat^\ast(t)}
+\newcommand{\vzdhat}{\dot{\vzhat}}
+\newcommand{\vzdhats}{\dot{\vzhat}^\ast}
+\newcommand{\vzdhatt}{\dot{\vzhat}(t)}
 \newcommand{\vzdhatst}{\dot{\vzhat}^*(t)}
 \newcommand{\vzhattil}{\tilde{\vzhat}}
 \newcommand{\vzdhattil}{\dot{\vztil}}
 % u
-\newcommand{\vu}{\vec{u}} 					
-\newcommand{\vut}{\vu(t)}					
-\newcommand{\vun}{\vu_0}					
-\newcommand{\vunn}{\vu(0)}	
-\newcommand{\us}{u^\ast}				 
-\newcommand{\vus}{\vu^\ast}					
-\newcommand{\vust}{\vu^\ast(t)}					
-\newcommand{\vud}{\dot{\vu}}				
-\newcommand{\vuds}{\dot{\vu}^\ast}			  
-\newcommand{\vudt}{\dot{\vu}(t)}     			
+\newcommand{\vu}{\vec{u}}
+\newcommand{\vut}{\vu(t)}
+\newcommand{\vun}{\vu_0}
+\newcommand{\vunn}{\vu(0)}
+\newcommand{\us}{u^\ast}
+\newcommand{\vus}{\vu^\ast}
+\newcommand{\vust}{\vu^\ast(t)}
+\newcommand{\vud}{\dot{\vu}}
+\newcommand{\vuds}{\dot{\vu}^\ast}
+\newcommand{\vudt}{\dot{\vu}(t)}
 \newcommand{\vudst}{\dot{\vu}^*(t)}
 \newcommand{\vutil}{\tilde{\vu}}
 \newcommand{\vudtil}{\dot{\vutil}}
 % u_k
-\newcommand{\vuk}{\vu_{{k}}} 					
+\newcommand{\vuk}{\vu_{{k}}}
 \newcommand{\vukp}{\vu_{{k}+1}}
+% w
+% x
+\newcommand{\vw}{\vec{w}}
+\newcommand{\vwn}{\vw_0}
+\newcommand{\vwnn}{\vw(0)}
+\newcommand{\vws}{\vw^\ast}		
 
 %============= VECTOR FIELDS ==============%
 %f
@@ -157,7 +163,7 @@
 \newcommand{\vfxt}{\vf(x(t))}
 \newcommand{\vfvx}{\vf(\vx)}
 \newcommand{\vfvxt}{\vf(\vxt)}
-\newcommand{\vfvxu}{\vf(\vx,u)}	
+\newcommand{\vfvxu}{\vf(\vx,u)}
 \newcommand{\vfvxtvut}{\vf(\vxt,\vut)}
 \newcommand{\vfvxvu}{\vf(\vx,\vu)}
 \newcommand{\vftxu}{\vf(t,x,u)}
@@ -169,7 +175,7 @@
 \newcommand{\vgxt}{\vg(x(t))}
 \newcommand{\vgvx}{\vg(\vx)}
 \newcommand{\vgvxt}{\vg(\vxt)}
-\newcommand{\vgvxu}{\vg(\vx,u)}	
+\newcommand{\vgvxu}{\vg(\vx,u)}
 \newcommand{\vgvxtvut}{\vg(\vxt,\vut)}
 \newcommand{\vgvxvu}{\vg(\vx,\vu)}
 \newcommand{\vgtxu}{\vg(t,x,u)}
@@ -181,7 +187,7 @@
 \newcommand{\vgtildext}{\vgtilde(x(t))}
 \newcommand{\vgtildevx}{\vgtilde(\vx)}
 \newcommand{\vgtildevxt}{\vgtilde(\vxt)}
-\newcommand{\vgtildevxu}{\vgtilde(\vx,u)}	
+\newcommand{\vgtildevxu}{\vgtilde(\vx,u)}
 \newcommand{\vgtildevxtvut}{\vgtilde(\vxt,\vut)}
 \newcommand{\vgtildevxvu}{\vgtilde(\vx,\vu)}
 \newcommand{\vgtildetxu}{\vgtilde(t,x,u)}
@@ -193,7 +199,7 @@
 \newcommand{\vhxt}{\vh(x(t))}
 \newcommand{\vhvx}{\vh(\vx)}
 \newcommand{\vhvxt}{\vh(\vxt)}
-\newcommand{\vhvxu}{\vh(\vx,u)}	
+\newcommand{\vhvxu}{\vh(\vx,u)}
 \newcommand{\vhvxtvut}{\vh(\vxt,\vut)}
 \newcommand{\vhvxvu}{\vh(\vx,\vu)}
 \newcommand{\vhtxu}{\vh(t,x,u)}
@@ -205,7 +211,7 @@
 \newcommand{\vhtildext}{\vhtilde(x(t))}
 \newcommand{\vhtildevx}{\vhtilde(\vx)}
 \newcommand{\vhtildevxt}{\vhtilde(\vxt)}
-\newcommand{\vhtildevxu}{\vhtilde(\vx,u)}	
+\newcommand{\vhtildevxu}{\vhtilde(\vx,u)}
 \newcommand{\vhtildevxtvut}{\vhtilde(\vxt,\vut)}
 \newcommand{\vhtildevxvu}{\vhtilde(\vx,\vu)}
 \newcommand{\vhtildetxu}{\vhtilde(t,x,u)}
@@ -235,17 +241,17 @@
 \newcommand{\te}{t_{\text{e}}}
 \newcommand{\tf}{t_{\text{f}}}
 % lambda
-\newcommand{\vlam}{\vec{\lambda}} 
+\newcommand{\vlam}{\vec{\lambda}}
 \newcommand{\vlamt}{\vlam(t)}
 \newcommand{\vlams}{\vlam^\ast}
-\newcommand{\vlamd}{\dot{\vlam}} 
-\newcommand{\vlamds}{\vlamd^\ast} 
+\newcommand{\vlamd}{\dot{\vlam}}
+\newcommand{\vlamds}{\vlamd^\ast}
 % mu
-\newcommand{\vmu}{\vec{\mu}} 
+\newcommand{\vmu}{\vec{\mu}}
 \newcommand{\vmut}{\vmu(t)}
 \newcommand{\vmus}{\vmu^\ast}
-\newcommand{\vmud}{\dot{\vmu}} 
-\newcommand{\vmuds}{\vmud^\ast} 
+\newcommand{\vmud}{\dot{\vmu}}
+\newcommand{\vmuds}{\vmud^\ast}
 % gradient f
 \newcommand{\gradfvx}{(\nabla f)(\vx)}
 \newcommand{\gradfvxk}{(\nabla f)(\vx_k)}
