@@ -295,3 +295,10 @@
 % hessian f
 \newcommand{\hessef}{(\nabla^2 f)(\vx)}
 \newcommand{\hessefk}{(\nabla^2 f)(\vx_k)}
+%============= Pre-set stuff ==============%
+\newcommand{\odeNonlinear}{\vxd = \vfvxvu,\quad t > 0, \quad \vx(0)=\vx_0}
+\newcommand{\odeInputAffine}{\vxd = \vfvx+B\vu,\quad t > 0, \quad \vx(0)=\vx_0}
+\newcommand{\odeLinear}{\vxd = A\vx+B\vu,\quad t \geq 0, \quad \vx(0)=\vx_0}
+\newcommand{\minBolzaForm}{\min_{\vu} J(\vu) = \varphi(\tf,\vx(\tf)) + \int_{t_0}^{t_f}l(t,\vxt,\vut)\dt}
+\newcommand{\minMayerForm}{\min_{\vu} J(\vu) = \varphi(\tf,\vx(\tf))}
+\newcommand{\minLagrangeForm}{\min_{\vu} J(\vu) =\int_{t_0}^{t_f}l(t,\vxt,\vut)\dt}
