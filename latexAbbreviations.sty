@@ -46,16 +46,7 @@
 
 %============= MATRICES ==============%
 \newcommand{\transpose}[1]{#1^{\mathrm{T}}}
-%============ VESSEL SPECIFIV ===========%
-\newcommand{\vnu}{\vec{\nu}}
-\newcommand{\vnud}{\dot{\vnu}}
-\newcommand{\veta}{\vec{\eta}}
-\newcommand{\vetad}{\dot{\veta}}
-\newcommand{\vtau}{\vec{\tau}}
-\newcommand{\cnu}{C(\vnu)}
-\newcommand{\dnu}{D(\vnu)}
-\newcommand{\rpsi}{R(\psi)}
-\newcommand{\rpsimat}{\begin{bmatrix}\cos{(\psi)} & -\sin{(\psi)} & 0 \\ \sin{(\psi)} & \cos{(\psi)} & 0 \\ 0& 0 & 1\end{bmatrix}}
+
 %============= SYSTEM VARIABLES ==============%
 \renewcommand{\vec}[1]{\boldsymbol{#1}}
 % x
@@ -302,3 +293,47 @@
 \newcommand{\minBolzaForm}{\min_{\vu} J(\vu) = \varphi(\tf,\vx(\tf)) + \int_{t_0}^{t_f}l(t,\vxt,\vut)\dt}
 \newcommand{\minMayerForm}{\min_{\vu} J(\vu) = \varphi(\tf,\vx(\tf))}
 \newcommand{\minLagrangeForm}{\min_{\vu} J(\vu) =\int_{t_0}^{t_f}l(t,\vxt,\vut)\dt}
+
+%============ VESSEL SPECIFIV ===========%
+\newcommand{\vnu}{\vec{\nu}}
+\newcommand{\vnud}{\dot{\vnu}}
+\newcommand{\veta}{\vec{\eta}}
+\newcommand{\vetad}{\dot{\veta}}
+\newcommand{\vtau}{\vec{\tau}}
+\newcommand{\cnu}{C(\vnu)}
+\newcommand{\dnu}{D(\vnu)}
+\newcommand{\rpsi}{R(\psi)}
+\newcommand{\rpsimat}{\begin{bmatrix}\cos{(\psi)} & -\sin{(\psi)} & 0 \\ \sin{(\psi)} & \cos{(\psi)} & 0 \\ 0& 0 & 1\end{bmatrix}}
+
+%============= SNAME ==============%
+% added mass
+\newcommand{\Xdu}{X_{\dot{u}}}
+\newcommand{\Ydv}{Y_{\dot{v}}}
+\newcommand{\Ydr}{Y_{\dot{r}}}
+\newcommand{\Ndv}{N_{\dot{v}}}
+\newcommand{\Ndr}{N_{\dot{r}}}
+% linear damping
+\newcommand{\Xu}{X_u}
+\newcommand{\Yv}{Y_v}
+\newcommand{\Yr}{Y_r}
+\newcommand{\Nv}{N_v}
+\newcommand{\Nr}{N_r}
+% nonlinear damping
+\newcommand{\Xuuu}{X_{uuu}}
+\newcommand{\Yvvr}{Y_{vvr}}
+\newcommand{\Yvvv}{Y_{vvv}}
+\newcommand{\Yvrr}{Y_{vrr}}
+\newcommand{\Yrrr}{Y_{rrr}}
+\newcommand{\Nvvr}{N_{vvr}}
+\newcommand{\Nvvv}{N_{vvv}}
+\newcommand{\Nvrr}{N_{vrr}}
+\newcommand{\Nrrr}{N_{rrr}}
+\newcommand{\Xabsuu}{X_{\vert u \vert u}}
+\newcommand{\Yabsrv}{Y_{\vert r \vert v}}
+\newcommand{\Yabsvv}{Y_{\vert v \vert v}}
+\newcommand{\Yabsvr}{Y_{\vert v \vert r}}
+\newcommand{\Yabsrr}{Y_{\vert r \vert r}}
+\newcommand{\Nabsrv}{N_{\vert r \vert v}}
+\newcommand{\Nabsvv}{N_{\vert v \vert v}}
+\newcommand{\Nabsvr}{N_{\vert v \vert r}}
+\newcommand{\Nabsrr}{N_{\vert r \vert r}}
