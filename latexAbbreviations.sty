@@ -4,15 +4,22 @@
 %============= REQUIREMENTS ==============%
 \RequirePackage{color}
 \RequirePackage{dsfont}
-\RequirePackage{pifont}
-% \RequirePackage{siunitx}
-\RequirePackage{amsmath}%,amsthm,amssymb}
+\RequirePackage{pifont} % for cmark and xmark
+ \RequirePackage{xspace}
+\RequirePackage{amsmath}
+%================= TIKZ/PGF ==================%
+\newcommand{\remake}{\tikzset{external/remake next}}
 
 %============ TEXT ABBREVIATIONS =============%
-\newcommand{\mpce}{model predictive control}
-\newcommand{\mpcd}{Modellprädiktive Regelung}
+\newcommand{\mpc}{model predictive control\xspace}
+\newcommand{\mpcd}{Modellprädiktive Regelung\xspace}
 \newcommand{\cmark}{\ding{51}}
 \newcommand{\xmark}{\ding{55}}
+\newcommand{\matlab}{\textsc{Matlab}\xspace}
+\newcommand{\fmincon}{\texttt{fmincon}\xspace}
+\newcommand{\snopt}{\textsc{SNOPT}\xspace}
+\newcommand{\ipopt}{\textsc{IPOPT}\xspace}
+\newcommand{\avl}{AVL Software and Functions GmbH\xspace}
 
 %============= FROM BEAMER CLASS ==============%
 \newcommand{\bs}[1]{{\boldsymbol #1}}
@@ -24,14 +31,12 @@
 \newcommand{\yv}[1][\cts]{\bs{y}#1}
 \newcommand{\yvd}[1][\cts]{\bs{y}^{\ast}#1}
 
-%============= TIKZ ==============%
-\newcommand{\remake}{\tikzset{external/remake next}}
-
 %============= ARRAYS ==============%
 \newcommand{\ra}[1]{\renewcommand{\arraystretch}{#1}}
 
 %============= GENERAL ==============%
 \newcommand{\abs}[1]{\vert #1 \vert}
+\newcommand{\norm}[1]{\vert\vert #1 \vert\vert}
 \newcommand{\dt}{\text{d}t}
 
 %============= DOMAINS ==============%
