@@ -40,14 +40,15 @@
 \newcommand{\dt}{\text{d}t}
 
 %============= DOMAINS ==============%
-\newcommand{\N}{\mathds{N}}
-\newcommand{\Z}{\mathds{Z}}
-\newcommand{\R}{\mathds{R}}
+\newcommand{\mathSetFont}[1]{\mathbb{#1}}
+\newcommand{\N}{\mathSetFont{N}}
+\newcommand{\Z}{\mathSetFont{Z}}
+\newcommand{\R}{\mathSetFont{R}}
 \newcommand{\Rtn}{\R_{t_0}^+}
 \newcommand{\Rplus}{\R^+}
-\newcommand{\inR}{\in\mathds{R}}
-\newcommand{\inRn}[1]{\in\mathds{R}^{#1}}
-\newcommand{\inRnm}[2]{\in\mathds{R}^{#1\times #2}}
+\newcommand{\inR}{\in\mathSetFont{R}}
+\newcommand{\inRn}[1]{\in\mathSetFont{R}^{#1}}
+\newcommand{\inRnm}[2]{\in\mathSetFont{R}^{#1\times #2}}
 
 %============= MATRICES ==============%
 \newcommand{\transpose}[1]{#1^\top}
